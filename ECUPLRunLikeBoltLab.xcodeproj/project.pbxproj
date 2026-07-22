@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+
+/* Begin PBXBuildFile section */
+    A10000000000000000000001 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* App.swift */; };
+    A10000000000000000000002 /* TrackConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* TrackConfiguration.swift */; };
+    A10000000000000000000003 /* TrackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* TrackStore.swift */; };
+    A10000000000000000000004 /* TrackPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* TrackPath.swift */; };
+    A10000000000000000000005 /* GPXExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* GPXExporter.swift */; };
+    A10000000000000000000006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* ContentView.swift */; };
+    A10000000000000000000010 /* StartReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* StartReminder.swift */; };
+    A10000000000000000000007 /* SampleStadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* SampleStadium.gpx */; };
+    A10000000000000000000008 /* TrackPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* TrackPathTests.swift */; };
+    A10000000000000000000009 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* XCTest.framework */; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+    A20000000000000000000001 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECUPLRunLikeBoltLabApp.swift; sourceTree = "<group>"; };
+    A20000000000000000000002 /* TrackConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackConfiguration.swift; sourceTree = "<group>"; };
+    A20000000000000000000003 /* TrackStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackStore.swift; sourceTree = "<group>"; };
+    A20000000000000000000004 /* TrackPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPath.swift; sourceTree = "<group>"; };
+    A20000000000000000000005 /* GPXExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXExporter.swift; sourceTree = "<group>"; };
+    A20000000000000000000006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+    A20000000000000000000007 /* SampleStadium.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SampleStadium.gpx; sourceTree = "<group>"; };
+    A20000000000000000000008 /* TrackPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPathTests.swift; sourceTree = "<group>"; };
+    A20000000000000000000009 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
+    A20000000000000000000010 /* ECUPLRunLikeBoltLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ECUPLRunLikeBoltLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    A20000000000000000000011 /* ECUPLRunLikeBoltLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ECUPLRunLikeBoltLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+    A20000000000000000000012 /* StartReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartReminder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+    A30000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+    A30000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000009 /* XCTest.framework in Frameworks */); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+    A40000000000000000000001 = {isa = PBXGroup; children = (A40000000000000000000002 /* ECUPLRunLikeBoltLab */, A40000000000000000000003 /* Tests */, A40000000000000000000004 /* Frameworks */, A40000000000000000000005 /* Products */); sourceTree = "<group>"; };
+    A40000000000000000000002 /* ECUPLRunLikeBoltLab */ = {isa = PBXGroup; children = (A40000000000000000000006 /* App */, A40000000000000000000007 /* Models */, A40000000000000000000008 /* Services */, A40000000000000000000009 /* Views */, A40000000000000000000010 /* Resources */, A40000000000000000000011 /* Info.plist */); path = ECUPLRunLikeBoltLab; sourceTree = "<group>"; };
+    A40000000000000000000003 /* Tests */ = {isa = PBXGroup; children = (A20000000000000000000008 /* TrackPathTests.swift */); path = ECUPLRunLikeBoltLabTests; sourceTree = "<group>"; };
+    A40000000000000000000004 /* Frameworks */ = {isa = PBXGroup; children = (A20000000000000000000009 /* XCTest.framework */); name = Frameworks; sourceTree = "<group>"; };
+    A40000000000000000000005 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000010 /* ECUPLRunLikeBoltLab.app */, A20000000000000000000011 /* ECUPLRunLikeBoltLabTests.xctest */); name = Products; sourceTree = "<group>"; };
+    A40000000000000000000006 /* App */ = {isa = PBXGroup; children = (A20000000000000000000001 /* App.swift */); path = App; sourceTree = "<group>"; };
+    A40000000000000000000007 /* Models */ = {isa = PBXGroup; children = (A20000000000000000000002 /* TrackConfiguration.swift */, A20000000000000000000003 /* TrackStore.swift */); path = Models; sourceTree = "<group>"; };
+    A40000000000000000000008 /* Services */ = {isa = PBXGroup; children = (A20000000000000000000004 /* TrackPath.swift */, A20000000000000000000005 /* GPXExporter.swift */, A20000000000000000000012 /* StartReminder.swift */); path = Services; sourceTree = "<group>"; };
+    A40000000000000000000009 /* Views */ = {isa = PBXGroup; children = (A20000000000000000000006 /* ContentView.swift */); path = Views; sourceTree = "<group>"; };
+    A40000000000000000000010 /* Resources */ = {isa = PBXGroup; children = (A20000000000000000000007 /* SampleStadium.gpx */); path = Resources; sourceTree = "<group>"; };
+    A40000000000000000000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+    A50000000000000000000001 /* ECUPLRunLikeBoltLab */ = {isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000001; buildPhases = (A30000000000000000000001, A70000000000000000000001, A80000000000000000000001); buildRules = (); dependencies = (); name = ECUPLRunLikeBoltLab; productName = ECUPLRunLikeBoltLab; productReference = A20000000000000000000010; productType = "com.apple.product-type.application"; };
+    A50000000000000000000002 /* ECUPLRunLikeBoltLabTests */ = {isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000002; buildPhases = (A30000000000000000000002, A70000000000000000000002); buildRules = (); dependencies = (A90000000000000000000001); name = ECUPLRunLikeBoltLabTests; productName = ECUPLRunLikeBoltLabTests; productReference = A20000000000000000000011; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+    AA00000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = { LastUpgradeCheck = 1600; TargetAttributes = { A50000000000000000000001 = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = A60000000000000000000003; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A40000000000000000000001; productRefGroup = A40000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (A50000000000000000000001, A50000000000000000000002); };
+/* End PBXProject section */
+/* Begin PBXResourcesBuildPhase section */
+    A80000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000007 /* SampleStadium.gpx in Resources */); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+    A70000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000003, A10000000000000000000004, A10000000000000000000005, A10000000000000000000006, A10000000000000000000010); runOnlyForDeploymentPostprocessing = 0; };
+    A70000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000008); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+/* Begin PBXTargetDependency section */
+    A90000000000000000000001 = {isa = PBXTargetDependency; target = A50000000000000000000001; targetProxy = AB00000000000000000000001; };
+/* End PBXTargetDependency section */
+/* Begin PBXContainerItemProxy section */
+    AB00000000000000000000001 = {isa = PBXContainerItemProxy; containerPortal = AA00000000000000000000001; proxyType = 1; remoteGlobalIDString = A50000000000000000000001; remoteInfo = ECUPLRunLikeBoltLab; };
+/* End PBXContainerItemProxy section */
+/* Begin XCBuildConfiguration section */
+    AC00000000000000000000001 = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.0; }; name = Debug; };
+    AC00000000000000000000002 = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.0; }; name = Release; };
+    AC00000000000000000000003 = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = ECUPLRunLikeBoltLab/Info.plist; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = com.chengdsyj.ecuplrunlikeboltlab; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+    AC00000000000000000000004 = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = ECUPLRunLikeBoltLab/Info.plist; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = com.chengdsyj.ecuplrunlikeboltlab; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+    AC00000000000000000000005 = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.chengdsyj.ecuplrunlikeboltlab.tests; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECUPLRunLikeBoltLab.app/ECUPLRunLikeBoltLab"; }; name = Debug; };
+    AC00000000000000000000006 = {isa = XCBuildConfiguration; buildSettings = { BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.chengdsyj.ecuplrunlikeboltlab.tests; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECUPLRunLikeBoltLab.app/ECUPLRunLikeBoltLab"; }; name = Release; };
+    AC00000000000000000000007 = {isa = XCBuildConfiguration; buildSettings = { DEVELOPMENT_TEAM = ""; IPHONEOS_DEPLOYMENT_TARGET = 17.0; }; name = Debug; };
+    AC00000000000000000000008 = {isa = XCBuildConfiguration; buildSettings = { DEVELOPMENT_TEAM = ""; IPHONEOS_DEPLOYMENT_TARGET = 17.0; }; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+    A60000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000003, AC00000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+    A60000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000005, AC00000000000000000000006); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+    A60000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000007, AC00000000000000000000008); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+ };
+ rootObject = AA00000000000000000000001;
+}
