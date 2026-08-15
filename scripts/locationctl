@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+PROJECT_DIR=$(dirname -- "$SCRIPT_DIR")
+RUNTIME_DIR="$PROJECT_DIR/.runtime"
+PYTHON_BIN="$RUNTIME_DIR/venv/bin/python"
+
+if [ ! -x "$PYTHON_BIN" ]; then
+    printf '%s\n' "尚未安装工作区运行环境。请先执行：" >&2
+    printf '  %s\n' "$PROJECT_DIR/scripts/setup-location-runtime.sh" >&2
+    exit 2
+fi
+
+mkdir -p "$RUNTIME_DIR/tmp" "$RUNTIME_DIR/pycache" "$RUNTIME_DIR/cache"
+export TMPDIR="$RUNTIME_DIR/tmp"
+export PYTHONPYCACHEPREFIX="$RUNTIME_DIR/pycache"
+export XDG_CACHE_HOME="$RUNTIME_DIR/cache"
+export ECUPL_LOCATION_RUNTIME="$RUNTIME_DIR"
+
+exec "$PYTHON_BIN" "$PROJECT_DIR/tools/location_controller.py" "$@"

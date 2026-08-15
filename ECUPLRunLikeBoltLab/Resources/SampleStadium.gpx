@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="ECUPL Run Like Bolt Lab" xmlns="http://www.topografix.com/GPX/1/1">
   <trk><name>示例操场</name><trkseg>
-    <trkpt lat="31.230000" lon="121.470000"><time>2026-01-01T00:00:00Z</time><speed>3.0</speed></trkpt>
-    <trkpt lat="31.230000" lon="121.470800"><time>2026-01-01T00:00:30Z</time><speed>3.0</speed></trkpt>
-    <trkpt lat="31.230400" lon="121.470800"><time>2026-01-01T00:01:00Z</time><speed>3.0</speed></trkpt>
-    <trkpt lat="31.230400" lon="121.470000"><time>2026-01-01T00:01:30Z</time><speed>3.0</speed></trkpt>
-    <trkpt lat="31.230000" lon="121.470000"><time>2026-01-01T00:02:00Z</time><speed>3.0</speed></trkpt>
+    <trkpt lat="31.230000" lon="121.470000"><time>2026-01-01T00:00:00Z</time></trkpt>
+    <trkpt lat="31.230000" lon="121.470800"><time>2026-01-01T00:00:30Z</time></trkpt>
+    <trkpt lat="31.230400" lon="121.470800"><time>2026-01-01T00:01:00Z</time></trkpt>
+    <trkpt lat="31.230400" lon="121.470000"><time>2026-01-01T00:01:30Z</time></trkpt>
+    <trkpt lat="31.230000" lon="121.470000"><time>2026-01-01T00:02:00Z</time></trkpt>
   </trkseg></trk>
 </gpx>

@@ -36,8 +36,9 @@ struct TrackPath {
     }
 
     func sampled(spacingMeters: CLLocationDistance = 5) -> [Sample] {
+        precondition(spacingMeters.isFinite && spacingMeters > 0, "采样间距必须大于 0")
         let count = max(2, Int(ceil(length / spacingMeters)))
-        return (0...count).map { index in sample(at: min(Double(index) * length / Double(count), length - 0.01)) }
+        return (0...count).map { index in sample(at: Double(index) * length / Double(count)) }
     }
 
     func sample(at distance: CLLocationDistance) -> Sample {

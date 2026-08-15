@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationStack {
             Form {
                 Section("用途") {
-                    Text("用于自有 iOS/iPadOS App 的定位测试与 GPX 导出，不会改变其他 App 的系统定位。")
+                    Text("本 App 负责编辑并导出 GPX；连接 Mac 后，可由仓库中的 locationctl 通过 iOS Developer Services 播放测试路线。")
                         .font(.footnote).foregroundStyle(.secondary)
                 }
                 Section("操场预设") {
@@ -41,13 +41,13 @@ struct ContentView: View {
                     Stepper("圈数：\(configuration.laps)", value: $configuration.laps, in: 1...1_000)
                     DatePicker("GPX 开始时间", selection: Binding($configuration.scheduledStart, replacingNilWith: Date()), displayedComponents: [.date, .hourAndMinute])
                     Button("安排开始提醒") { Task { do { try await StartReminder.schedule(for: configuration) } catch { self.error = error.localizedDescription } } }
-                    Text("开始时间写入 GPX 时间戳；App 只提供提醒和导出，不能在后台控制系统定位。") .font(.footnote).foregroundStyle(.secondary)
+                    Text("开始时间写入 GPX 时间戳；iPhone App 不能独立控制系统定位，路线播放必须由连接的 Mac 执行。") .font(.footnote).foregroundStyle(.secondary)
                 }
                 if let preview {
                     Section("路线预览") {
                         TrackMap(path: preview)
                         LabeledContent("单圈长度", value: String(format: "%.0f 米", preview.length))
-                        LabeledContent("预计总时长", value: duration(preview.length * Double(configuration.laps) / configuration.speedMetersPerSecond))
+                        LabeledContent("预计总时长", value: estimatedDuration(for: preview))
                     }
                 }
                 Section { Button("导出 GPX") { export() }.frame(maxWidth: .infinity) }
@@ -62,6 +62,10 @@ struct ContentView: View {
     private func refreshPreview() { do { preview = try TrackPath(configuration: configuration) } catch { preview = nil; self.error = error.localizedDescription } }
     private func export() { do { exportedFile = try GPXExporter.export(configuration: configuration); showingShare = true } catch { self.error = error.localizedDescription } }
     private func duration(_ seconds: Double) -> String { let f = DateComponentsFormatter(); f.allowedUnits = [.hour, .minute, .second]; f.unitsStyle = .abbreviated; return f.string(from: seconds) ?? "—" }
+    private func estimatedDuration(for path: TrackPath) -> String {
+        guard configuration.speedMetersPerSecond.isFinite, configuration.speedMetersPerSecond > 0 else { return "—" }
+        return duration(path.length * Double(configuration.laps) / configuration.speedMetersPerSecond)
+    }
 }
 
 private struct TrackMap: View {
